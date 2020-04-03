@@ -1,0 +1,40 @@
+.App {
+  position: relative;
+  background-image: url("https://freecodecampassets.s3.us-east-2.amazonaws.com/Drum+Machine+images/DarkForestLimeFaded1Artboard+1.png");
+  background-size: 180vh;
+  padding: 30px;
+  height: 100vh;
+  background-position-y: -200%;
+}
+
+/*
+.todo-List {
+  background: #e8e8e8;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 400px;
+}
+
+.todo {
+  background: #fff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  padding: 30x 10px;
+  font-size: 12px;
+  margin-bottom: 6px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 1rem;
+  height: 2.25em;
+}
+
+*/
