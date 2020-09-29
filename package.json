@@ -7,13 +7,20 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.5.2",
+    "bootswatch": "^4.5.2",
     "knob-input": "^0.2.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-bootstrap-range-slider": "^1.2.2",
+    "react-dom": "^16.13.1",
+    "react-native-volume-slider": "^0.5.1",
+    "react-player-controls": "^2.0.0-beta.0",
     "react-rotary-knob": "^1.1.8",
     "react-rotary-knob-skin-pack": "^1.0.2",
     "react-scripts": "3.3.0",
-    "react-tap-event-plugin": "^3.0.3"
+    "react-tap-event-plugin": "^3.0.3",
+    "reactstrap": "^8.6.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -6,26 +6,37 @@ import { send } from "q";
 import Knob1 from "./Components/Knob1";
 import { Knob } from "react-rotary-knob";
 import * as skins from "react-rotary-knob-skin-pack";
+import "react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css";
+import RangeSlider from "react-bootstrap-range-slider";
+import backRollWav from "./sounds/backRollWav.wav";
+import allLetLoose from "./sounds/allLetLoose.wav";
+import dubsiren from "./sounds/dubsiren.wav";
+import bass1 from "./sounds/bass1.wav";
+import bassPlus2semi from "./sounds/bassPlus2semi.wav";
+import up7semi from "./sounds/up7semi.wav";
+import fullAmen from "./sounds/fullAmen.wav";
+import chop1 from "./sounds/chop1.wav";
+import chop2 from "./sounds/chop2.wav";
 
 function App() {
   const [clicked, setClicked] = useState("");
   const [source, setSource] = useState("");
   const [isPlay, setIsPlay] = useState(true);
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(100);
   const [samplePlaying, setSamplePlaying] = useState("Volume:0");
   const [volumeValue, setVolumeValue] = useState(0);
   const [power, setPower] = useState(false);
   const [isHeard, setIsHeard] = useState("");
   const [audioFiles, setAudioFiles] = useState([
-    "https://freecodecampassets.s3.us-east-2.amazonaws.com/drum+machine+wavs/back+roll+wav.wav",
-    "https://freecodecampassets.s3.us-east-2.amazonaws.com/drum+machine+wavs/all_ganjaman_let_loose.wav",
-    "https://freecodecampassets.s3.us-east-2.amazonaws.com/drum+machine+wavs/dubsiren2+wav.wav",
-    "https://freecodecampassets.s3.us-east-2.amazonaws.com/drum+machine+wavs/bass+1+wav.wav",
-    "https://freecodecampassets.s3.us-east-2.amazonaws.com/drum+machine+wavs/up2semi+wav.wav",
-    "https://freecodecampassets.s3.us-east-2.amazonaws.com/drum+machine+wavs/up7semi+wav.wav",
-    "https://freecodecampassets.s3.us-east-2.amazonaws.com/drum+machine+wavs/full+amen+wav.wav",
-    "https://freecodecampassets.s3.us-east-2.amazonaws.com/drum+machine+wavs/chop1+wav.wav",
-    "https://freecodecampassets.s3.us-east-2.amazonaws.com/drum+machine+wavs/chop2+wav.wav"
+    backRollWav,
+    allLetLoose,
+    dubsiren,
+    bass1,
+    bassPlus2semi,
+    up7semi,
+    fullAmen,
+    chop1,
+    chop2
   ]);
 
   let qRef = useRef();
@@ -102,6 +113,10 @@ function App() {
     };
   });
 
+  useEffect(() => {
+    setSamplePlaying("Volume:" + value);
+  }, [value]);
+
   // sound samples
   for (var i in audioFiles) {
     preloadAudio(audioFiles[i]);
@@ -136,18 +151,9 @@ function App() {
     }
   }
 
-  function handleOnChange(val) {
-    //ignore change if distance is greater than defined
-    //here we use a distance of 200 because our max value is 1000
-    //change if needed
-    const maxDistance = 200;
-    let distance = Math.abs(val - { value });
-    if (distance > maxDistance) {
-      return;
-    } else {
-      setValue(val);
-      setSamplePlaying("Volume:" + Math.floor(val));
-    }
+  function handleOnChange(e) {
+    setValue(e.target.value);
+    setSamplePlaying(value);
   }
 
   //functions for setting pads that "choke" each other
@@ -217,7 +223,7 @@ function App() {
 
       <div className="volume-box">
         <div id="knob-wrapper">
-          <Knob
+          {/*    <Knob
             id="knob"
             skin={skins.s15}
             preciseMode={false}
@@ -227,7 +233,8 @@ function App() {
               width: "100%",
               height: "100%"
             }}
-          />
+          /> */}
+          <RangeSlider value={value} onChange={e => setValue(e.target.value)} />
         </div>
         {power == true && (
           <div id="display">
