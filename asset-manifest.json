@@ -1,23 +1,35 @@
 {
   "files": {
-    "main.css": "/DrumMachine/static/css/main.23a7caf1.chunk.css",
-    "main.js": "/DrumMachine/static/js/main.608b3e39.chunk.js",
-    "main.js.map": "/DrumMachine/static/js/main.608b3e39.chunk.js.map",
+    "main.css": "/DrumMachine/static/css/main.a5db8387.chunk.css",
+    "main.js": "/DrumMachine/static/js/main.3ba18442.chunk.js",
+    "main.js.map": "/DrumMachine/static/js/main.3ba18442.chunk.js.map",
     "runtime-main.js": "/DrumMachine/static/js/runtime-main.caf25a20.js",
     "runtime-main.js.map": "/DrumMachine/static/js/runtime-main.caf25a20.js.map",
-    "static/js/2.0def954d.chunk.js": "/DrumMachine/static/js/2.0def954d.chunk.js",
-    "static/js/2.0def954d.chunk.js.map": "/DrumMachine/static/js/2.0def954d.chunk.js.map",
+    "static/css/2.a60ef40c.chunk.css": "/DrumMachine/static/css/2.a60ef40c.chunk.css",
+    "static/js/2.7504205b.chunk.js": "/DrumMachine/static/js/2.7504205b.chunk.js",
+    "static/js/2.7504205b.chunk.js.map": "/DrumMachine/static/js/2.7504205b.chunk.js.map",
     "index.html": "/DrumMachine/index.html",
-    "precache-manifest.61d88833e124fffb5d94b8369a2db24d.js": "/DrumMachine/precache-manifest.61d88833e124fffb5d94b8369a2db24d.js",
+    "precache-manifest.f3a5a74ade41cacd5b6cd73ecb0e726d.js": "/DrumMachine/precache-manifest.f3a5a74ade41cacd5b6cd73ecb0e726d.js",
     "service-worker.js": "/DrumMachine/service-worker.js",
-    "static/css/main.23a7caf1.chunk.css.map": "/DrumMachine/static/css/main.23a7caf1.chunk.css.map",
-    "static/js/2.0def954d.chunk.js.LICENSE": "/DrumMachine/static/js/2.0def954d.chunk.js.LICENSE",
-    "static/media/logo.svg": "/DrumMachine/static/media/logo.5d5d9eef.svg"
+    "static/css/2.a60ef40c.chunk.css.map": "/DrumMachine/static/css/2.a60ef40c.chunk.css.map",
+    "static/css/main.a5db8387.chunk.css.map": "/DrumMachine/static/css/main.a5db8387.chunk.css.map",
+    "static/js/2.7504205b.chunk.js.LICENSE": "/DrumMachine/static/js/2.7504205b.chunk.js.LICENSE",
+    "static/media/allLetLoose.wav": "/DrumMachine/static/media/allLetLoose.ff23ea27.wav",
+    "static/media/backRollWav.wav": "/DrumMachine/static/media/backRollWav.e48f62ea.wav",
+    "static/media/bass1.wav": "/DrumMachine/static/media/bass1.a2abbfdc.wav",
+    "static/media/bassPlus2semi.wav": "/DrumMachine/static/media/bassPlus2semi.328b83b9.wav",
+    "static/media/chop1.wav": "/DrumMachine/static/media/chop1.54916d03.wav",
+    "static/media/chop2.wav": "/DrumMachine/static/media/chop2.f776207c.wav",
+    "static/media/dubsiren.wav": "/DrumMachine/static/media/dubsiren.892df155.wav",
+    "static/media/fullAmen.wav": "/DrumMachine/static/media/fullAmen.f865034a.wav",
+    "static/media/logo.svg": "/DrumMachine/static/media/logo.5d5d9eef.svg",
+    "static/media/up7semi.wav": "/DrumMachine/static/media/up7semi.df09d55b.wav"
   },
   "entrypoints": [
     "static/js/runtime-main.caf25a20.js",
-    "static/js/2.0def954d.chunk.js",
-    "static/css/main.23a7caf1.chunk.css",
-    "static/js/main.608b3e39.chunk.js"
+    "static/css/2.a60ef40c.chunk.css",
+    "static/js/2.7504205b.chunk.js",
+    "static/css/main.a5db8387.chunk.css",
+    "static/js/main.3ba18442.chunk.js"
   ]
 }
