@@ -1,10 +1,11 @@
 .App {
   position: relative;
   background-image: url("https://freecodecampassets.s3.us-east-2.amazonaws.com/Drum+Machine+images/DarkForestLimeFaded1Artboard+1.png");
-  background-size: 180vh;
+  background-size: 200vh;
   padding: 30px;
   height: 100vh;
-  background-position-y: -200%;
+  width: 100vw;
+  background-position-y: -1800%;
 }
 
 /*
