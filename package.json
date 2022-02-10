@@ -10,7 +10,7 @@
     "bootstrap": "^4.5.2",
     "bootswatch": "^4.5.2",
     "knob-input": "^0.2.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-bootstrap-range-slider": "^1.2.2",
     "react-dom": "^16.13.1",
